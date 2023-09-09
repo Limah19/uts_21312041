@@ -27,7 +27,7 @@ class HomeView extends GetView<HomeController> {
           ListTile(
             onTap: () {
               Get.back();
-              controller.deleteProduct(id);
+              controller.deleteMahasiswa(id);
             },
             title: Text('Delete'),
           ),
@@ -94,7 +94,7 @@ class HomeView extends GetView<HomeController> {
                 title: Text(
                     "${(listAllDocs[index].data() as Map<String, dynamic>)["name"]}"),
                 subtitle: Text(
-                    "${(listAllDocs[index].data() as Map<String, dynamic>)["price"]}"),
+                    "${(listAllDocs[index].data() as Map<String, dynamic>)["npm"]}"),
                 trailing: IconButton(
                   onPressed: () => showOption(listAllDocs[index].id),
                   icon: Icon(Icons.more_vert),
@@ -108,7 +108,7 @@ class HomeView extends GetView<HomeController> {
         },
       ),
       floatingActionButton: FloatingActionButton(
-        onPressed: () => Get.toNamed(Routes.ADD_PRODUCT),
+        onPressed: () => Get.toNamed(Routes.ADD_MAHASISWA),
         child: Icon(Icons.add),
       ),
     );

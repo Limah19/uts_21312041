@@ -1,7 +1,7 @@
 import 'package:get/get.dart';
 
-import '../modules/add_product/bindings/add_product_binding.dart';
-import '../modules/add_product/views/add_product_view.dart';
+import '../modules/add_mahasiswa/bindings/add_mahasiswa_binding.dart';
+import '../modules/add_mahasiswa/views/add_mahasiswa_view.dart';
 import '../modules/home/bindings/home_binding.dart';
 import '../modules/home/views/home_view.dart';
 import '../modules/login/bindings/login_binding.dart';
@@ -49,9 +49,9 @@ class AppPages {
       binding: ResetPasswordBinding(),
     ),
     GetPage(
-      name: _Paths.ADD_PRODUCT,
-      page: () => const AddProductView(),
-      binding: AddProductBinding(),
+      name: _Paths.ADD_MAHASISWA,
+      page: () => const AddMahasiswaView(),
+      binding: AddMahasiswaBinding(),
     ),
     GetPage(
       name: _Paths.UPDATE_PRODUCT,
